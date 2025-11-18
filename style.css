@@ -1,0 +1,110 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: rgb(240, 240, 240);
+    min-height: 100dvh;
+}
+
+.header{
+    background-color: #fff;
+    display: flex;
+    width: 100%;
+}
+
+h1{
+    margin: auto;
+    color: #000;
+    font-family:arial;
+    text-align: center;
+}
+
+
+/*----------seccion de cursos------*/
+
+.contenedor{
+    width: 80%;
+    margin: 10px auto;
+}
+
+.contenedor-productos{
+    background-color: #ffffffff;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+}
+
+.contenedor-producto{
+    background-color: #fffdeb;
+    border-radius: 10px;
+}
+
+img{
+    width: 100%;
+}
+
+h2{
+    font-family: sans-serif;
+}
+
+.contenedor-informacion{
+    padding: 0 7px;
+    height: auto;
+    margin:0;
+}
+
+.informacion{
+    height: 100px;
+    overflow: auto;
+    scrollbar-width:thin ;
+}
+
+.contenedor-compra{
+    background-color: rgb(80, 255, 41);
+    border-radius: 10px;
+    display: flex;
+    margin: auto;
+    margin-top: 3%;
+    width: fit-content;
+    bottom: 0;
+}
+
+.contenedor-compra:hover{
+    box-shadow: 0px 0px 10px #1f1;
+}
+.contenedor-compra:active{
+    box-shadow: 0px 0px 20px #1f1;
+}
+
+.compra{
+    padding: 5px 30px;
+    color: #230f0f;
+    text-decoration: none;
+    font-weight: 900;
+}
+
+footer{
+    padding: 15px 0;
+    background-color: #000;
+    color:#fff;
+    width: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+span{
+    margin-top: 15px;
+}
+
+/*-------------meediaqueris--------*/
+
+@media (min-width:700px){
+    .contenedor-productos{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
